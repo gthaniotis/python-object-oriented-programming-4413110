@@ -4,8 +4,16 @@
     // Additional Extensions Here
   ],
   "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
-  "postAttachCommand": "git pull --all"
-  
+  "postAttachCommand": "git pull --all",
+  // Name this configuration
+  "name": "Codespace for Skills!",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot"
+      ]
+    }
+  }
   // Update welcome text and set terminal prompt to '$ '
 }
 // DevContainer Reference: https://code.visualstudio.com/docs/remote/devcontainerjson-reference
